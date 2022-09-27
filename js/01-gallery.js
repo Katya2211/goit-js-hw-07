@@ -25,7 +25,7 @@ function createImagesMarkup(items) {
 
 galleryRef.addEventListener("click", onModalOpenClick);
 
-function onModalOpenClick(event) 
+function onModalOpenClick(event) {
   event.preventDefault();
 
   if (event.target.nodeName !== "IMG") {
@@ -49,3 +49,4 @@ function onModalOpenClick(event)
       galleryRef.removeEventListener("keydown", onModalCloseClick);
     }
   }
+}
